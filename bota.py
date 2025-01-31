@@ -1,8 +1,12 @@
 import logging
 import asyncio
+import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram.ext import CallbackContext
+
+# Получение порта из переменной окружения, иначе используем стандартный 8080
+port = os.environ.get('PORT', 8080)
 
 # Логирование для отладки
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
