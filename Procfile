@@ -1,1 +1,1 @@
-echo "worker: python bota.py" > Procfile
+worker: python bota.py
