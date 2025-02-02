@@ -58,7 +58,7 @@ async def error(update: Update, context: CallbackContext):
 def main():
     """Запуск бота."""
     # Ваш API-токен
-    token = os.getenv('8101914867:AAFSkaFsPsH-2un3z2voe4QP11ruzL4Zudo')  # Прочитает токен из переменной окружения
+    token = os.getenv('TELEGRAM_TOKEN') # Прочитает токен из переменной окружения
     if not token:
         print("Токен не установлен!")
         return 
