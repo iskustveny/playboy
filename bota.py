@@ -62,6 +62,8 @@ def main():
     """Запуск бота."""
     # Ваш API-токен
     token = os.getenv('TELEGRAM_TOKEN') # Прочитает токен из переменной окружения
+    print(f"Токен: {os.getenv('TELEGRAM_TOKEN')}")
+
     if not token:
         print("Токен не установлен!")
         return 
