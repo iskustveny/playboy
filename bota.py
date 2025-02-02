@@ -4,6 +4,9 @@ import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from telegram.ext import CallbackContext
+from dotenv import load_dotenv
+load_dotenv()  # Загружаем переменные из .env
+
 
 # Получение порта из переменной окружения, иначе используем стандартный 8080
 port = os.environ.get('PORT', 8080)
